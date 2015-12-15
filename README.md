@@ -27,3 +27,6 @@ You can use it as much you want
         if (is_chrome && is_opera) {
             is_chrome = false;
         }
+        
+        var isMobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+
