@@ -30,3 +30,8 @@ You can use it as much you want
         
         var isMobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 
+        $(window).on('orientationchange', function (event) {
+                //alert(orientation);
+                location.reload();
+        });
+
