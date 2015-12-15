@@ -3,7 +3,7 @@ JS HACK for Common Browsers
 
 You can use it as much you want
 
-
+        // if ie_ver() gives you version of ie
         function ie_ver() {
             var iev = 0;
             var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
@@ -15,7 +15,7 @@ You can use it as much you want
 
             return iev;
         }
-
+        // Other browser check
         var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
         var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
         var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
@@ -28,10 +28,10 @@ You can use it as much you want
             is_chrome = false;
         }
         
+        // Check if device is mobile
         var isMobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-
+        // If screen orientation changes
         $(window).on('orientationchange', function (event) {
-                //alert(orientation);
-                location.reload();
+                //location.reload();
         });
 
